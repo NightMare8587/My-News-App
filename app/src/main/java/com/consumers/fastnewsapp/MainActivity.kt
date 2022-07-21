@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity() {
         recyclerView.layoutManager = LinearLayoutManager(this)
         progressBar.visibility = View.INVISIBLE
         val requestQueue = Volley.newRequestQueue(this)
-        val url = "https://saurav.tech/NewsAPI/top-headlines/category/health/in.json"
+        val url = "https://saurav.tech/NewsAPI/top-headlines/category/general/in.json"
 
         val request = StringRequest(Request.Method.GET,url,{ response ->
                 Log.i("info",response.toString())
